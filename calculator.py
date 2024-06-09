@@ -25,6 +25,6 @@ if __name__ == "__main__":
     try:
         parsed_input = parse_input(input_str)
         result = calculate(parsed_input)
-        print(f"The result is: {result}")
+        print("the result {} is correct", result)
     except ValueError as e:
         print(e)
