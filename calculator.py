@@ -21,10 +21,10 @@ def calculate(parsed_input):
         raise ValueError("Invalid operation")
 
 if __name__ == "__main__":
-    input_str = input("Enter your first number, operation, and second number (e.g., 5+5): modified from the main branch")
+    input_str = input("Enter your first number, operation, and second number (e.g., 5+5): ")
     try:
         parsed_input = parse_input(input_str)
         result = calculate(parsed_input)
-        print("the result {} is correct", result)
+        print(f"Result: {result}")
     except ValueError as e:
-        print(e)
+        print(f"Error: {e}")
